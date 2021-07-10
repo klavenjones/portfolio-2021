@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.3;
   @apply m-0 min-h-full overflow-x-hidden bg-black text-white;
 }
 

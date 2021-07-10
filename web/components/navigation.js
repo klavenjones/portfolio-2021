@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import { motion, useCycle } from 'framer-motion'
 import MenuToggle from './menu-toggle'
 
 const mobile = {
   open: {
     opacity: 1,
-    visibility: 1,
+    visibility: 'visible',
     y: 0,
     transition: {
       ease: 'easeIn',
@@ -13,11 +14,13 @@ const mobile = {
   },
   closed: {
     opacity: 0,
-    visibility: 0,
     y: 100,
     transition: {
       ease: 'easeOut',
       duration: 0.4
+    },
+    transitionEnd: {
+      visibility: 'hidden'
     }
   }
 }
@@ -33,9 +36,21 @@ export default function Navigation() {
           </div>
           <div className='navbar__nav'>
             <ol>
-              <li className='navbar__links'>Work</li>
-              <li className='navbar__links'>Resume</li>
-              <li className='navbar__links'>About</li>
+              <li className='navbar__links'>
+                <Link href='/'>
+                  <a>Work</a>
+                </Link>
+              </li>
+              <li className='navbar__links'>
+                <Link href='/'>
+                  <a>Resume</a>
+                </Link>
+              </li>
+              <li className='navbar__links'>
+                <Link href='/'>
+                  <a>About</a>
+                </Link>
+              </li>
             </ol>
             <MenuToggle toggle={toggleOpen} />
           </div>
@@ -49,9 +64,21 @@ export default function Navigation() {
       >
         <nav className='nav-mobile__nav'>
           <ol>
-            <li className='nav-mobile__links'>Work</li>
-            <li className='nav-mobile__links'>Resume</li>
-            <li className='nav-mobile__links'>About</li>
+            <li className='nav-mobile__links'>
+              <Link href='/'>
+                <a>Work</a>
+              </Link>
+            </li>
+            <li className='nav-mobile__links'>
+              <Link href='www.facebook.com'>
+                <a>Resume</a>
+              </Link>
+            </li>
+            <li className='nav-mobile__links'>
+              <Link href='#'>
+                <a>About</a>
+              </Link>
+            </li>
           </ol>
         </nav>
       </motion.div>

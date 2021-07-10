@@ -1,0 +1,16 @@
+.home-container {
+  @apply p-8 md:p-10 border flex flex-col h-screen;
+}
+
+.hero__container {
+  @apply mt-20 sm:mt-32 md:mt-52 grid grid-cols-12 border border-red-600;
+}
+
+.hero__headline {
+  @apply col-span-12 md:col-span-8 lg:col-span-6;
+}
+
+.hero__headline h3 {
+  @apply leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed;
+  font-size: clamp(1rem, (2.2 - 1) * 1.2vw + 1rem, 3rem);
+}
