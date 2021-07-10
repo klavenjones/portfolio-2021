@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.3;
+  @apply m-0 min-h-full overflow-x-hidden bg-black text-white;
+}
+
+html,
+body {
+  @apply w-full h-full;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+@import './home.css';
+@import './navigation.css';
+@import './about.css';
+@import './footer.css';

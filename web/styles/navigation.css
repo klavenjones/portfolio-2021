@@ -1,0 +1,55 @@
+.navbar-container {
+  @apply fixed p-8 md:p-10 top-0 flex justify-center items-center w-full bg-black z-20;
+}
+
+.navbar {
+  @apply flex items-center justify-between w-full;
+}
+
+.navbar__logo {
+  @apply uppercase tracking-wide text-xl md:text-2xl;
+}
+
+.navbar ol {
+  @apply hidden md:flex items-center space-x-8;
+}
+
+.navbar__links {
+  @apply text-xl;
+}
+
+.hamburger {
+  width: 35px;
+  top: 35px;
+  @apply md:hidden pointer-events-auto right-5 md:right-10 space-y-2 cursor-pointer focus-within:outline-none focus:outline-none;
+}
+
+.hamburger__bar {
+  @apply w-full bg-white transition-all duration-200 rounded-md;
+  height: 3px;
+}
+
+.change .hamburger__bar:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .hamburger__bar:nth-child(2) {
+  @apply opacity-0;
+}
+
+.change .hamburger__bar:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-9px, -6px);
+  transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.nav-mobile {
+  @apply md:hidden absolute top-0 left-0 pt-24 w-full h-full min-h-screen flex flex-col items-center justify-center z-10 overflow-y-scroll overflow-x-hidden;
+}
+
+.nav-mobile__nav ol {
+  @apply flex flex-col space-y-7 text-center;
+}
+
+.nav-mobile__nav li {
+  @apply text-4xl;
+}
