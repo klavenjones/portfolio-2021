@@ -1,11 +1,10 @@
-import { Gallery, Hero, Layout } from '../components'
+import { Layout, Resume } from '../components'
 
 export default function Home() {
   return (
     <Layout>
       <main className='home-container'>
-        <Hero />
-        <Gallery />
+        <Resume />
       </main>
     </Layout>
   )

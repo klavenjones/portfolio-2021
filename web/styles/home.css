@@ -1,9 +1,9 @@
 .home-container {
-  @apply p-8 md:p-10 border flex flex-col h-screen;
+  @apply p-8 md:p-10 flex flex-col;
 }
 
 .hero__container {
-  @apply mt-20 sm:mt-32 md:mt-52 grid grid-cols-12 border border-red-600;
+  @apply mt-20 sm:mt-32 md:mt-52 grid grid-cols-12;
 }
 
 .hero__headline {

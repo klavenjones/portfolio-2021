@@ -4,7 +4,7 @@ import Navigation from './navigation'
 
 export default function Layout({ children }) {
   return (
-    <div id='root'>
+    <div>
       <Navigation />
       {children}
       <Footer />

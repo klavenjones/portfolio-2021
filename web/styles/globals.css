@@ -22,6 +22,8 @@ body {
 }
 
 @import './home.css';
+@import './gallery.css';
+@import './resume.css';
 @import './navigation.css';
 @import './about.css';
 @import './footer.css';

@@ -42,7 +42,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li className='navbar__links'>
-                <Link href='/'>
+                <Link href='/resume'>
                   <a>Resume</a>
                 </Link>
               </li>
@@ -70,7 +70,7 @@ export default function Navigation() {
               </Link>
             </li>
             <li className='nav-mobile__links'>
-              <Link href='www.facebook.com'>
+              <Link href='/resume'>
                 <a>Resume</a>
               </Link>
             </li>
